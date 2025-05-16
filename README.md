@@ -1,6 +1,17 @@
 # MCP Template Projekt
 
 ## Pre-Commit Hook
+## Setup
+
+Für die lokale Entwicklung und Tests:
+
+```bash
+. ./.openhands/setup.sh
+```
+
+Für den Produktivbetrieb (z.B. im Docker-Container) werden nur die Pakete aus `requirements.txt` installiert.
+
+
 
 Vor jedem Commit wird automatisch ein Check mit [Ruff](https://github.com/astral-sh/ruff) (Code Style/Linting) und [Bandit](https://github.com/PyCQA/bandit) (Security) durchgeführt. Das Skript befindet sich unter `.openhands/pre-commit.sh` und kann als Git-Hook eingebunden werden:
 
