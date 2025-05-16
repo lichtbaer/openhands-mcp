@@ -1,7 +1,7 @@
 import json
 import httpx
 from fastmcp import FastMCP
-from app.config import MCP_CONFIG
+from .config import MCP_CONFIG
 
 with open(MCP_CONFIG["openapi_spec_path"], "r") as f:
     openapi_spec = json.load(f)
