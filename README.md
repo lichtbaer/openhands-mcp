@@ -24,6 +24,26 @@ ln -s ../../.openhands/pre-commit.sh .git/hooks/pre-commit
 
 Dieses Projekt ist ein Template für MCP-Server auf Basis von [FastMCP](https://gofastmcp.com) und dem [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction). Es bietet eine standardisierte, modulare und containerisierte Architektur für die Entwicklung von MCP-Servern.
 
+
+## OpenHands via MCP: KI-gestützte Automatisierung für Entwickler
+
+Dieses Projekt stellt die OpenHands API als MCP-Server bereit. OpenHands ist eine KI-Agentenplattform, die Aufgaben wie Code-Änderungen, Kommandoausführung, Web-Browsing, API-Aufrufe und mehr automatisiert. Über die MCP-Integration können AI-Agents und andere Systeme die OpenHands-Funktionalität programmatisch und standardisiert nutzen.
+
+**Was macht OpenHands?**
+- Automatisiert Entwickleraufgaben mit KI-Agenten
+- Kann Code ändern, Befehle ausführen, APIs aufrufen, Dateien verwalten, u.v.m.
+- Bietet eine HTTP-API (siehe https://docs.all-hands.dev/)
+
+**Was macht dieser MCP-Server?**
+- Stellt die OpenHands-API als MCP-konforme Ressourcen und Tools bereit
+- Generiert alle Endpunkte automatisch aus der OpenAPI-Spezifikation (`api/openapi.json`)
+- Ermöglicht KI-Agenten und anderen Systemen, OpenHands-Funktionen über das MCP-Protokoll zu nutzen
+
+**Typische Anwendungsfälle:**
+- KI-Agenten, die Code-Änderungen automatisiert vorschlagen und umsetzen
+- Automatisierte Code-Reviews, Refactorings oder Security-Checks
+- Integration von OpenHands in eigene DevOps- oder Automatisierungs-Workflows
+
 ## Ziele
 - **Schneller Einstieg:** Klare Struktur und Dokumentation für neue Projekte.
 - **Modularität:** Trennung von Ressourcen, Tools und Prompts.
