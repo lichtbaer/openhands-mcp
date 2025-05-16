@@ -8,6 +8,8 @@ Vor jedem Commit wird automatisch ein Check mit [Ruff](https://github.com/astral
 ln -s ../../.openhands/pre-commit.sh .git/hooks/pre-commit
 ```
 
+**Hinweis:** Bandit meldet einen Sicherheitshinweis, wenn der Server auf `0.0.0.0` gebunden wird (siehe `app/config.py`). Dies ist für containerisierte Umgebungen und Entwicklung meist gewollt, sollte aber für Produktionsumgebungen geprüft werden.
+
 
 Dieses Projekt ist ein Template für MCP-Server auf Basis von [FastMCP](https://gofastmcp.com) und dem [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction). Es bietet eine standardisierte, modulare und containerisierte Architektur für die Entwicklung von MCP-Servern.
 
