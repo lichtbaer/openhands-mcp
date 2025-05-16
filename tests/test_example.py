@@ -1,11 +1,7 @@
 import pytest
-from fastmcp import FastMCP
-import httpx
-import json
 
 @pytest.fixture(scope="module")
 def mcp_server():
-    from app.config import MCP_CONFIG
     from app.main import mcp
     yield mcp
 
