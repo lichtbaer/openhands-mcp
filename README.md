@@ -36,8 +36,9 @@ Dieses Projekt ist ein Template für MCP-Server auf Basis von [FastMCP](https://
 
 ## Komponenten
 - **app/**: Enthält die Hauptlogik des MCP-Servers (Ressourcen, Tools, Prompts).
+- **api/openapi.json**: OpenAPI-Spezifikation, aus der die API generiert wird.
 - **microagents/**: Erweiterbare, kleine Module für spezifische Aufgaben.
-- **tests/**: Tests für alle Module und Microagents.
+- **tests/**: Tests für alle generierten Endpunkte und Microagents.
 - **Dockerfile**: Für die Containerisierung.
 - **requirements.txt**: Listet alle Python-Abhängigkeiten.
 
@@ -51,3 +52,22 @@ Microagents sind kleine, wiederverwendbare Module, die z.B. für Datenbankzugrif
 ## Hinweise
 - Jeder Microagent sollte eine eigene Dokumentation (README oder docstring) enthalten.
 - Die Hauptdokumentation befindet sich in dieser Datei.
+
+## Beispiel: Server-Start mit OpenAPI-Spezifikation
+
+1. Lege die Zieladresse des OpenHands-Servers in einer Umgebungsvariable fest (z.B. in einer `.env`-Datei):
+
+```
+OPENHANDS_API_BASE_URL=http://localhost:3000
+```
+
+2. Passe ggf. die `app/config.py` an, damit die Variable ausgelesen wird (siehe unten).
+
+3. Starte den Server:
+
+```bash
+python -m app.main
+```
+
+Der Server generiert automatisch alle Endpunkte aus der OpenAPI-Spezifikation unter `api/openapi.json` und leitet die Requests an die konfigurierte Ziel-API weiter.
+
