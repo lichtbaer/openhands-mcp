@@ -10,4 +10,4 @@ api_client = httpx.AsyncClient(base_url=MCP_CONFIG["api_base_url"])
 mcp = FastMCP.from_openapi(openapi_spec=openapi_spec, client=api_client, name="OpenHands API")
 
 if __name__ == "__main__":
-    mcp.run(host=MCP_CONFIG["server_host"], port=MCP_CONFIG["server_port"], debug=MCP_CONFIG["debug"])
+    mcp.run(transport="streamable-http", host=MCP_CONFIG["server_host"], port=MCP_CONFIG["server_port"], log_level="debug")
