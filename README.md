@@ -1,5 +1,14 @@
 # MCP Template Projekt
 
+## Pre-Commit Hook
+
+Vor jedem Commit wird automatisch ein Check mit [Ruff](https://github.com/astral-sh/ruff) (Code Style/Linting) und [Bandit](https://github.com/PyCQA/bandit) (Security) durchgeführt. Das Skript befindet sich unter `.openhands/pre-commit.sh` und kann als Git-Hook eingebunden werden:
+
+```bash
+ln -s ../../.openhands/pre-commit.sh .git/hooks/pre-commit
+```
+
+
 Dieses Projekt ist ein Template für MCP-Server auf Basis von [FastMCP](https://gofastmcp.com) und dem [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction). Es bietet eine standardisierte, modulare und containerisierte Architektur für die Entwicklung von MCP-Servern.
 
 ## Ziele
