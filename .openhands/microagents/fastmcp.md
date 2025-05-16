@@ -1,7 +1,7 @@
 # Microagent: FastMCP
 
 ## Beschreibung
-FastMCP ist eine Python-Bibliothek zur schnellen Entwicklung von MCP-Servern. Sie implementiert das Model Context Protocol (MCP) und bietet eine flexible, modulare Architektur für KI- und Datenanwendungen.
+FastMCP ist eine Python-Bibliothek zur schnellen Entwicklung von MCP-Servern, die speziell für die Interaktion mit OpenHands-Agents und Microagents ausgelegt sind. Sie implementiert das Model Context Protocol (MCP) und bietet eine flexible, modulare Architektur für KI- und Datenanwendungen.
 
 ## Grundlegende Nutzung
 

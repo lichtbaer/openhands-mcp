@@ -1,6 +1,6 @@
 # MCP Server Template – Microagents Grundsätze
 
-Dieses Projekt dient als Template für MCP-Server auf Basis von FastMCP und dem Model Context Protocol (MCP). Ziel ist eine klare, modulare und containerisierte Architektur für die Entwicklung von MCP-Servern.
+Dieses Projekt ist ein OpenHands-kompatibler MCP-Server, der als Template für die Entwicklung von modularen, containerisierten und klar strukturierten MCP-Servern dient. Ziel ist die nahtlose Interaktion mit OpenHands-Agents und -Microagents über das Model Context Protocol (MCP) und FastMCP.
 
 ## Grundsätze
 - **Modularität:** Trennung von Ressourcen, Tools und Prompts für maximale Wiederverwendbarkeit.
